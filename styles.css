@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    height: 90vh;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+.container h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 0;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.card{
+    width: 30%;
+    margin-bottom: 5%;
+    position: relative;
+    border-radius: 8%;
+    overflow: hidden;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+}
+.card img:hover{
+    cursor: pointer;
+    transform:scale(1.1) ;
+    filter:grayscale(0%) ;
+    transition-duration:1s ;
+}
+
